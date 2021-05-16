@@ -34,7 +34,7 @@ struct Pnt {
   Pnt operator-(double k)const&{return Pnt(x-k,y-k);}
   /** Equality between two points. {O(1),=} */
   bool operator==(const Pnt&q)const&{return eql(x,q.x)&&eql(y,q.y);}
-  /** Order between points, from left to right and descending. {O(1),=} */
+  /** Order between points, from left to right and ascending. {O(1),=} */
   bool operator<(const Pnt&q)const&{
     return lss(x,q.x)||(eql(x,q.x)&&lss(y,q.y));
   }
