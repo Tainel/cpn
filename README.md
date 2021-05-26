@@ -4,8 +4,7 @@ The project consists of useful **C++** code for competitive programming.
 
 The root directory **cpn/** is composed of the following:
 
- * **bin/**: contains the main executable.
- * **source/**: contains the implementation.
+ * **source/**: contains the source code.
  * **Makefile**: set of instructions for compilation.
  * **README.md**: general information about the project.
 
