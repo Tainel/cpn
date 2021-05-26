@@ -16,11 +16,11 @@ template<class T>T lcs(T& str1,T& str2){
       if(str1[i-1]==str2[j-1])dp[i][j]=dp[i-1][j-1]+1;
       else dp[i][j]=max(dp[i-1][j],dp[i][j-1]);
   for(int i=n,j=m;i>0&&j>0;) {
-    if(str1[i-1]==str2[j-1])
-      s.insert(s.begin(),str1.begin()+i-1,str1.begin()+i),--i,--j;
+    if(str1[i-1]==str2[j-1])s.pb(str1[i-1]),--i,--j;
     else if(dp[i-1][j]>dp[i][j-1])--i;
     else --j;
   }
+  reverse(all(s));
   return s;
 }
 
