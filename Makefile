@@ -15,7 +15,6 @@ CXXFLAGS := -std=c++11 -O2 -g -Wconversion -Wshadow -Wall -Wextra -Werror\
 -D_GLIBCXX_DEBUG -D_LOCAL_COMP
 
 # Subdirectories.
-BIN := bin/
 SRC := source/
 ALG := $(SRC)algorithms/
 GEO := $(SRC)geometry/
@@ -60,12 +59,12 @@ $(I5B) $(I5C) $(I6A) $(I6B) $(I6C) $(I6D)
 # OS-dependant variables.
 ifeq ($(OS),Windows_NT)
   RM := del /f /q
-  EXE := $(BIN:/=\)main.exe
+  EXE := main.exe
 else ifndef OS
   UNAME := $(shell uname -s)
   ifeq ($(UNAME),Linux)
     RM := rm -f
-    EXE := $(BIN)main
+    EXE := main
   endif
 endif
 
