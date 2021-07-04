@@ -96,6 +96,7 @@ mt19937_64 rnd64((ull)chrono::steady_clock::now().time_since_epoch().count());
 #include "algorithms/binary_search.cpp"
 #include "algorithms/dynamic_programming.cpp"
 #include "algorithms/longest_increasing_subsequence.cpp"
+#include "algorithms/nim.cpp"
 #endif // _LOCAL_COMP
 
 //_____________________________________________________________________________
