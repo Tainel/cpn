@@ -40,6 +40,8 @@ class Graph {
     vector<pair<int,int>>bfs_tags(int root=0);
     vector<int>euler_tour(int root=0);
     void complete_tour(int v,int&idx,vector<bool>&used,vector<int>&tour);
+    bool is_tree();
+    int tree_diameter();
 };
 
 /** Initializes an empty graph. {O(n),=} */
