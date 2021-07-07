@@ -37,6 +37,9 @@ class Graph {
     void fscc(int u,pair<int,vector<vector<vector<int>>>>&a,stack<int>&s);
     vector<vector<int>>tarjan();
     bool bipartite(vector<int>&color);
+    vector<pair<int,int>>bfs_tags(int root=0);
+    vector<int>euler_tour(int root=0);
+    void complete_tour(int v,int&idx,vector<bool>&used,vector<int>&tour);
 };
 
 /** Initializes an empty graph. {O(n),=} */

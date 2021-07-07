@@ -88,6 +88,7 @@ mt19937_64 rnd64((ull)chrono::steady_clock::now().time_since_epoch().count());
 #include "graphs/bipartite.cpp"
 #include "graphs/strongly_connected_components.cpp"
 #include "graphs/topological_sort.cpp"
+#include "graphs/lowest_common_ancestor.cpp"
 #include "strings/palindromes.cpp"
 #include "strings/string_matching.cpp"
 #include "strings/longest_common_subsequence.cpp"

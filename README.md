@@ -8,7 +8,7 @@ The root directory **cpn/** is composed of the following:
  * **Makefile**: set of instructions for compilation.
  * **README.md**: general information about the project.
 
-The project is intended for **Windows** and **GNU/Linux**. Besides, the
+The project is intended for **Windows** and **GNU/Linux** OSs. Besides, the
 building tool **make** is required if one wants to build the executable to
 check if it compiles. The available targets for it are:
 
