@@ -95,6 +95,7 @@ mt19937_64 rnd64((ull)chrono::steady_clock::now().time_since_epoch().count());
 #include "strings/longest_common_subsequence.cpp"
 #include "geometry/cartesian_points.cpp"
 #include "geometry/convex_hull.cpp"
+#include "geometry/circle.cpp"
 #include "algorithms/binary_search.cpp"
 #include "algorithms/dynamic_programming.cpp"
 #include "algorithms/longest_increasing_subsequence.cpp"
