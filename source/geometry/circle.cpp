@@ -36,7 +36,7 @@ bool Circle::inside(const Pnt&p){return lss(distsq(o,p),r*r);}
 /** Determines if p is strictly outside the area of the circle. {O(1),=} */
 bool Circle::outside(const Pnt&p){return lss(r*r,distsq(o,p));}
 
-/** Determines if a point belongs to the circle. {O(1),=} */
+/** Determines if p belongs to the circle. {O(1),=} */
 bool Circle::belongs(const Pnt&p){return eql(distsq(o,p),r*r);}
 
 /** Returns the intersection points of two different circles. {O(1),=} */

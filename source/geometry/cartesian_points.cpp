@@ -43,7 +43,7 @@ struct Pnt {
 /** Initializes a point in the plane. {O(1),=} */
 Pnt::Pnt(double _x,double _y):x(_x),y(_y){}
 
-/** Returns the norm. */
+/** Returns the norm. {O(1),=} */
 double Pnt::norm(){return sqrt(x*x+y*y);}
 
 /** Returns the square of the norm. {O(1),=} */
