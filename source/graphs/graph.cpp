@@ -43,6 +43,7 @@ class Graph {
     vector<int>euler_ntour(int root=0);
     bool is_tree();
     int tree_diameter();
+    pair<vector<pair<int,int>>,vector<int>>get_cuts();
 };
 
 /** Initializes an empty graph. {O(n),=} */

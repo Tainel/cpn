@@ -33,15 +33,16 @@ I2A := $(GEO)cartesian_points.cpp
 I2B := $(GEO)circle.cpp
 I2C := $(GEO)convex_hull.cpp
 I3A := $(GPH)bipartite.cpp
-I3B := $(GPH)euler_path.cpp
-I3C := $(GPH)graph.cpp
-I3D := $(GPH)lowest_common_ancestor.cpp
-I3E := $(GPH)minimum_spanning_tree.cpp
-I3F := $(GPH)shortest_path.cpp
-I3G := $(GPH)strongly_connected_components.cpp
-I3H := $(GPH)topological_sort.cpp
-I3I := $(GPH)traversal.cpp
-I3J := $(GPH)tree.cpp
+I3B := $(GPH)cuts.cpp
+I3C := $(GPH)euler_path.cpp
+I3D := $(GPH)graph.cpp
+I3E := $(GPH)lowest_common_ancestor.cpp
+I3F := $(GPH)minimum_spanning_tree.cpp
+I3G := $(GPH)shortest_path.cpp
+I3H := $(GPH)strongly_connected_components.cpp
+I3I := $(GPH)topological_sort.cpp
+I3J := $(GPH)traversal.cpp
+I3K := $(GPH)tree.cpp
 I4A := $(MTH)basic_algebra.cpp
 I4B := $(MTH)combinatorics.cpp
 I4C := $(MTH)divisors.cpp
@@ -57,8 +58,8 @@ I6B := $(STS)disjoint_set_union.cpp
 I6C := $(STS)fenwick_tree.cpp
 I6D := $(STS)range_minimum_query.cpp
 IMP := $(I1A) $(I1B) $(I1C) $(I1D) $(I2A) $(I2B) $(I2C) $(I3A) $(I3B) $(I3C)\
-$(I3D) $(I3E) $(I3F) $(I3G) $(I3H) $(I3I) $(I3J) $(I4A) $(I4B) $(I4C) $(I4D)\
-$(I4E) $(I4F) $(I4G) $(I5A) $(I5B) $(I5C) $(I6A) $(I6B) $(I6C) $(I6D)
+$(I3D) $(I3E) $(I3F) $(I3G) $(I3H) $(I3I) $(I3J) $(I3K) $(I4A) $(I4B) $(I4C)\
+$(I4D) $(I4E) $(I4F) $(I4G) $(I5A) $(I5B) $(I5C) $(I6A) $(I6B) $(I6C) $(I6D)
 
 # OS-dependant variables.
 ifeq ($(OS),Windows_NT)
