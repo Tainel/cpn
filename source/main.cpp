@@ -20,10 +20,10 @@ using namespace std;
 #define FASTIO ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
 // IO Macros
 #define cases int tttttt;cin>>tttttt;while(tttttt--)
-#define nn cout<<"\n"
+#define __ cout<<"\n"
 #define debug(n) cout<<#n" = "<<(n)<<"\n"
 #define printd(d) cout<<fixed<<setprecision(10)<<(d)
-#define printv(v) {fore(eeeeee,(v))cout<<eeeeee<<" ";nn;}
+#define printv(v) {fore(eeeeee,(v))cout<<eeeeee<<" ";__;}
 #define printm(m) {fore(ffffff,(m)){printv(ffffff);}}
 // Alias Macros
 #define ub upper_bound
@@ -50,19 +50,22 @@ using namespace std;
 #define leq(a,b) ((a)<(b)+EPS)
 #define lss(a,b) ((a)+EPS<(b))
 #define irnd(a,b) (rnd()%((b)-(a)+1)+(a))
+#define irnd64(a,b) (rnd64()%((b)-(a)+1)+(a))
 // Expansion Macros
 #define all(v) (v).begin(),(v).end()
 // Types
 typedef long long ll;
 typedef unsigned long long ull;
+typedef long double ld;
 // Constants
 const double EPS = 1e-9;
 const int MAXN = 10000000;
 const int MOD = 1000000007;
 const ull INF = 1000000000000000001ULL;
 // Other Definitios
-mt19937 rnd((unsigned)chrono::steady_clock::now().time_since_epoch().count());
-mt19937_64 rnd64((ull)chrono::steady_clock::now().time_since_epoch().count());
+auto _seed = chrono::steady_clock::now().time_since_epoch().count();
+mt19937 rnd((unsigned)_seed);
+mt19937_64 rnd64((ull)_seed);
 
 //_____________________________________________________________________________
 

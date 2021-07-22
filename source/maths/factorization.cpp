@@ -26,7 +26,7 @@ map<ull,int>prime_fact(ull x,vector<int>&primes){
 /** Returns a non trivial factor of x. {O(sqrt(sqrt(x))*log2(x)),O(1)} */
 ull pollard_rho(ull x){
   if((x&1)==0)return 2;
-  ull r=2,y=2,d=1,b=irnd(1,x),c=irnd(1,x);
+  ull r=2,y=2,d=1,b=irnd64(1,x),c=irnd64(1,x);
   while(d==1){
     r=(mulmod(r,r+b,x)+c)%x,y=(mulmod(y,y+b,x)+c)%x;
     y=(mulmod(y,y+b,x)+c)%x,d=gcd((r<y)?y-r:r-y,x);
