@@ -24,7 +24,7 @@ vector<pair<int,ll>>Graph::dijkstra(int o){
   return d;
 }
 
- /** Finds the shortest path from vertex o to each node using Bellman-Ford.
+/** Finds the shortest path from vertex o to each node using Bellman-Ford.
  * {O(n*m),O(n)} */
 vector<pair<int,ll>>Graph::bellman_ford(int o,bool neg){
   vector<pair<int,ll>>d(n,{-1,(ll)INF}); d[o].snd=0;

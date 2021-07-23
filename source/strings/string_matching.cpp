@@ -32,8 +32,8 @@ template<class T>vector<int>kmp(T& txt,T& str){
   return pos;
 }
 
-/** Given s returns z such that z[i] is the longest substring of s that starts
- * in i and is a proper prefix of s. {O(r),=} */
+/** Given s returns z such that z[i] is the length of the longest substring of
+ * s that starts in i and is a proper prefix of s. {O(r),=} */
 vector<int>z_array(string& s){
   int r=sz(s),x=0,y=0;
   vector<int>z(r);
